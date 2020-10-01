@@ -1,0 +1,10 @@
+{
+  "LocalisationPackage": {
+    "Language": "fr-FR",
+    "Strings": {
+      "AIRCRAFT.DESCRIPTION": "Après six ans de développement top secret, le XCub a été finalement dévoilé par l'entreprise CubCrafters basée à Washington en 2016 comme rejeton industriel de leur avion en kit expérimental populaire, le Carbon Cub EX.<\/br><\/br>Tandis que le XCub partage de nombreuses similarités avec le Carbon Cub EX -- les deux avions ont hérité de la conception du Piper PA-18 Super Cub de 1949 -- le XCub a été repensé de la casserole à l'empennage avec une chose en tête : l'aventure.<\/br><\/br>Arborant une aile haute haubanée en V en porte-à-faux, une hélice composite légère à vitesse constante, les « branchies de requin » sur son capot et une prise d'air inversée permettant d'expulser l'air par le bas, le XCub bénéficie d'une série d'améliorations aérodynamiques qui renforcent significativement les performances.<\/br><\/br>Les ailerons, volets et le stabilisateur vertical de la série G tiennent leur promesse, avec une stabilité de lacet améliorée, une réponse au roulis légère et précise, et une harmonie de commandes globale optimisée. Ajoutez à cela les capacités remarquables du XCub en matière de décollage et atterrissage courts (STOL), la vitesse importante et le rayon d'action amélioré, et cet avion à train classique est plus que prêt à affronter la nature sauvage - ou toute autre destination que vous avez en tête.",
+      "AIRCRAFT.UI_MANUFACTURER": "CubCrafters",
+      "AIRCRAFT.UI_MODEL": "XCub"
+    }
+  }
+}

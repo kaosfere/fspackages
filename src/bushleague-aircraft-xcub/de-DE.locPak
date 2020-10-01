@@ -1,0 +1,10 @@
+{
+  "LocalisationPackage": {
+    "Language": "de-DE",
+    "Strings": {
+      "AIRCRAFT.DESCRIPTION": "Nach sechs Jahren der geheimen Entwicklung enthüllte das in Washington ansässige Unternehmen CubCrafters schließlich 2016 die XCub als einen vollwertigen Nachfolger seines beliebten Experimentalfliegers, der Carbon Cub EX.<\/br><\/br>Während die XCub viele Gemeinsamkeiten mit der Carbon Cub EX besitzt – wobei beide Flugzeuge auf die Piper PA-18 Super Cub zurückgehen, die 1949 ihren ersten Flug unternahm –, wurde die XCub mit einem einzigen Ziel im Auge von der Propellerhaube bis zum Heck völlig neu designt: Abenteuer.<\/br><\/br>Mit ihren freischwingenden V-Streben-Hochflügeln, ihrem leichtgewichtigen Festdrehzahlpropeller aus Verbundstoff, ihren berühmten „Haikiemen“ auf der Motorhaube und ihrer Fähigkeit, Luft an der Unterseite abzugeben, besitzt die XCub ein ganzes Paket aerodynamischer Verbesserungen, die ihre Leistung signifikant steigern.<\/br><\/br>Hierzu tragen ebenfalls das neu erdachte Querruder der G-Serie, die Landeklappen, der vertikale Steuerschwanz, die verbesserte Gierungsstabilität, das leichte und knackige Rollverhalten sowie die allgemein optimierte Steuerungsharmonie bei. Wenn Sie all dies außerdem noch mit den beeindruckenden STOL-Fähigkeiten, der erhöhten Geschwindigkeit und der erweiterten Reichweite kombinieren, gelangen Sie zu der Erkenntnis, dass dieses Spornradflugzeug mehr als nur dazu befähigt ist, jedes Flugziel in Angriff zu nehmen, das ihnen gefällt.",
+      "AIRCRAFT.UI_MANUFACTURER": "Cub Crafter",
+      "AIRCRAFT.UI_MODEL": "XCub"
+    }
+  }
+}

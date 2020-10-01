@@ -1,0 +1,10 @@
+{
+  "LocalisationPackage": {
+    "Language": "it-IT",
+    "Strings": {
+      "AIRCRAFT.DESCRIPTION": "Dopo sei anni di sviluppo in segreto, CubCrafters, con sede a Washington, svela nel 2016 l'XCub, descrivendolo come il successore destinato alla produzione del loro popolare aereo sperimentale, il Carbon Cub EX.<\/br><\/br>L'XCub presenta molte somiglianze con il Carbon Cub EX ed entrambi gli aeromobili traggono le proprie caratteristiche di design dal Piper PA-18 Super Cub del 1949, ma il nuovo modello viene progettato interamente all'insegna di un unico concetto: l'avventura.<\/br><\/br>Dotato di ali alte a sbalzo controventate a V, di un'elica leggera composita a velocità costante, di \"branchie di squalo\" sulla cappottatura e di una presa inversa per la fuoriuscita di aria dal fondo, l'XCub vanta una serie di miglioramenti aerodinamici che aumentano notevolmente le prestazioni.<\/br><\/br>Gli alettoni, gli ipersostentatori e la pinna verticale della serie G sono rinnovati e mantengono la promessa di una migliore stabilità dell'imbardata, una risposta al rollio leggera e nitida e un'ottimizzazione della fluidità dei comandi.  A ciò si aggiungono le straordinarie capacità di STOL dell'XCub e una velocità e una portata superiori, che rendono questo aeromobile a carrello convenzionale pronto a raggiungere aree remote o qualsiasi altra destinazione abbiate in mente.",
+      "AIRCRAFT.UI_MANUFACTURER": "Cub Crafter",
+      "AIRCRAFT.UI_MODEL": "X Cub"
+    }
+  }
+}

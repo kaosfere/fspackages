@@ -1,0 +1,10 @@
+{
+  "LocalisationPackage": {
+    "Language": "pl-PL",
+    "Strings": {
+      "AIRCRAFT.DESCRIPTION": "Po sześciu latach prowadzonych w ścisłej tajemnicy prac waszyngtońska firma CubCrafters zaprezentowała model XCub – najnowszą wersję swojego eksperymentalnego samolotu Carbon Cub EX.<\/br><\/br>Maszyna ta odziedziczyła po swoim poprzedniku cały szereg cech, które wywodzą się jeszcze z opracowanego w 1949 roku klasycznego modelu Piper PA-18 Super Cub, jednak została przy tym całkowicie przeprojektowana, od kołpaka po sam ogon. Wszystko po to, aby umożliwić jej pilotom bliskie spotkanie z przygodą.<\/br><\/br>Ten wzmocniony skośnymi zastrzałami górnopłat wyposażony jest w lekkie śmigło kompozytowe o stałej prędkości obrotu, charakterystyczne dla swojej marki „skrzela” na zasłonce silnika oraz dolny odwrócony wylot powietrza. Model XCub charakteryzuje się także całą gamą usprawnień aerodynamicznych, które znacząco poprawiają jego osiągi.<\/br><\/br>Innowacyjne klapy lotek z serii G oraz umieszczona nieco dalej pionowa listwa poprawiają stabilność podczas odchylania, ułatwiając precyzyjne przechylanie maszyny oraz optymalizując ogólne sterowanie. Należy przy tym wspomnieć o zdolności do krótkiego startu i lądowania, zwiększonej prędkości i większym zasięgu, które sprawiają, że ten samolot z kółkiem tylnym idealnie sprawdzi się w miejscach o słabo rozwiniętej infrastrukturze lotniczej i w każdym zakątku świata, który tylko przyjdzie ci do głowy.",
+      "AIRCRAFT.UI_MANUFACTURER": "Cub Crafter",
+      "AIRCRAFT.UI_MODEL": "X Cub"
+    }
+  }
+}

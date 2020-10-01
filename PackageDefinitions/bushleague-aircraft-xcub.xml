@@ -1,0 +1,22 @@
+<AssetPackage Name="bushleague-legends-xcub" Version="0.1.0">
+	<ItemSettings>
+		<ContentType>CUSTOM</ContentType>
+		<Title>Bush League XCub</Title>
+		<Manufacturer/>
+		<Creator>Bush League Legends</Creator>
+	</ItemSettings>
+	<Flags>
+		<VisibleInStore>false</VisibleInStore>
+		<CanBeReferenced>false</CanBeReferenced>
+	</Flags>
+	<AssetGroups>
+		<AssetGroup Name="bushleague-aircraft-xcub">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>src\bushleague-aircraft-xcub</AssetDir>
+			<OutputDir>.\</OutputDir>
+		</AssetGroup>			
+	</AssetGroups>
+</AssetPackage>
