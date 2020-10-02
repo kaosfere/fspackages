@@ -226,9 +226,6 @@
 				</ToFixed>
 			</Right>
 		</Text>
-		
-		<CAS nbMessages="11"/>
-
 	</EngineDisplay>
 	
   <!--Annunciations -->
