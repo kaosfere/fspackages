@@ -353,28 +353,22 @@
 	</Annunciation> 
 
 	<Annunciation>
-			<Type>Advisory</Type>
-			<Text>PITOT HT OFF</Text>
-			<Condition>
-			<Lower>
-					<Simvar name="PITOT HEAT" unit="Boolean"/>
-				<Constant>1</Constant>
-			</Lower>
-			</Condition>
+		<Type>Caution</Type>
+		<Text>PITOT TEMP</Text>
+		<Condition>
+			<And>
+				<LowerEqual>
+          			<Simvar name="AMBIENT TEMPERATURE" unit="celsius"/>
+          			<Constant>7</Constant>
+				</LowerEqual>
+				<GreaterEqual>
+					<Simvar name="L:G3X_Pitot_Heating" unit="Boolean"/>
+					<Constant>1</Constant>
+				</GreaterEqual>
+			</And>
+		</Condition>
 	</Annunciation>
 
-	
-	<Annunciation>
-			<Type>Advisory</Type>
-			<Text>PITOT HT ON</Text>
-			<Condition>
-			<GreaterEqual>
-					<Simvar name="PITOT HEAT" unit="Boolean"/>
-				<Constant>1</Constant>
-			</GreaterEqual>
-			</Condition>
-	</Annunciation>
-	
 	<Annunciation>
 			<Type>Caution</Type>
 			<Text>PARK BRAKE</Text>
@@ -387,7 +381,7 @@
 	</Annunciation>
 
 	<Annunciation>
-      <Type>Caution</Type>
+      <Type>Advisory</Type>
       <Text>FUEL PUMP ON</Text>
       <Condition>
         <Simvar name="GENERAL ENG FUEL PUMP ON:1" unit="Boolean"/>
