@@ -26,6 +26,7 @@
 			<Minimum>0</Minimum>
 			<Maximum>40</Maximum>
 			<Style>
+				<SizePercent>90</SizePercent>
 				<BeginAngle>-45</BeginAngle>
 				<EndAngle>180</EndAngle>
 				<ValuePos>End</ValuePos>
@@ -48,14 +49,24 @@
 			<BeginText></BeginText>
 			<EndText></EndText>
 		</Gauge>
-  
+
+		<!-- <Text>
+			<Left id="MANIN_Gauge">
+			<Unit>%</Unit>
+				<ToFixed precision="0">
+					<Simvar name="RECIP ENG MANIFOLD PRESSURE:1" unit="percent"/>
+				</ToFixed>
+			</Left>
+		</Text> -->
+
 		<Gauge>
 			<Type>Circular</Type>
 			<ID>RPM_Gauge</ID>
 			<Unit>RPM</Unit>
 			<Minimum>0</Minimum>
-			<Maximum>2750</Maximum> <!-- Not Sure -->
+			<Maximum>2700</Maximum> <!-- Not Sure -->
 			<Style>
+			<SizePercent>90</SizePercent>
 				<BeginAngle>-45</BeginAngle>
 				<EndAngle>180</EndAngle>
 				<ValuePos>End</ValuePos>
@@ -67,18 +78,19 @@
 			<ColorZone>
 				<Color>green</Color>
 				<Begin>500</Begin>
+				<End>2699</End>
+			</ColorZone>
+			<ColorZone>
+				<Color>red</Color>
+				<Begin>2700</Begin>
 				<End>2700</End>
 			</ColorZone>
-			<ColorLine>
-				<Color>red</Color>
-				<Position>2701</Position>
-			</ColorLine>
 			<BeginText></BeginText>
 			<EndText></EndText>
 			<RedBlink>
 				<Greater>
 					<Simvar name="PROP RPM:1" unit="rpm"/>
-					<Constant>2700</Constant>
+					<Constant>2701</Constant>
 				</Greater>
 			</RedBlink>
 		</Gauge>
@@ -102,65 +114,66 @@
 		</Gauge>
 		
 		<Gauge>
-			<Type>Horizontal</Type>
-			<ID>OilPsi_Gauge</ID>
-			<Title>OIL</Title>
-			<Unit>PSI</Unit>
-			<Minimum>0</Minimum>
-			<Maximum>120</Maximum> <!-- Not Sure -->
-			<Style>
-				<ValuePos>End</ValuePos>
-			</Style>
-			<Value>
-				<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
-			</Value>
-			<ColorZone>
-				<Color>yellow</Color>
-				<Begin>95</Begin>
-				<End>115</End>
-			</ColorZone>
-			<ColorZone>
-				<Color>green</Color>
-				<Begin>55</Begin>
-				<End>95</End>
-			</ColorZone>
-			<ColorZone>
-				<Color>yellow</Color>
-				<Begin>25</Begin>
-				<End>55</End>
-			</ColorZone>
-			<ColorZone>
-				<Color>red</Color>
-				<Begin>0</Begin>
-				<End>25</End>
-			</ColorZone>
-			<ColorLine>
-				<Color>red</Color>
-				<Position>116</Position>
-			</ColorLine>
-			<BeginText></BeginText>
-			<EndText></EndText>
-			<RedBlink>
-				<Or>
-					<Greater>
-						<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
-						<Constant>115</Constant>
-					</Greater>
-					<Lower>
-						<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
-						<Constant>25</Constant>
-					</Lower>
-				</Or>
-			</RedBlink>
-		</Gauge>
-		
+		<Type>Horizontal</Type>
+		<ID>OilPsi_Gauge</ID>
+		<Title>OIL</Title>
+		<Unit>PSI</Unit>
+		<Minimum>0</Minimum>
+		<Maximum>115</Maximum>
+		<Style>
+			<ValuePos>End</ValuePos>
+		</Style>
+		<Value>
+			<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
+		</Value>
+		<ColorZone>
+			<Color>red</Color>
+			<Begin>0</Begin>
+			<End>24</End>
+		</ColorZone>
+		<ColorZone>
+			<Color>yellow</Color>
+			<Begin>25</Begin>
+			<End>59</End>
+		</ColorZone>
+		<ColorZone>
+			<Color>green</Color>
+			<Begin>60</Begin>
+			<End>94</End>
+		</ColorZone>
+		<ColorZone>
+			<Color>yellow</Color>
+			<Begin>95</Begin>
+			<End>114</End>
+		</ColorZone>
+		<ColorZone>
+			<Color>red</Color>
+			<Begin>115</Begin>
+			<End>115</End>
+		</ColorZone>
+		<BeginText></BeginText>
+		<EndText></EndText>
+		<RedBlink>
+			<Or>
+				<Greater>
+					<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
+					<Constant>114</Constant>
+				</Greater>
+				<Lower>
+					<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
+					<Constant>25</Constant>
+				</Lower>
+			</Or>
+		</RedBlink>
+	  </Gauge>
+
 		<Gauge>
 			<Type>Horizontal</Type>
 			<ID>OilTemp_Gauge</ID>
-			<Title>OIL</Title>
-			<Unit>TEMP</Unit>
+			<Title>OIL °F</Title>
+			<Unit></Unit>
 			<Minimum>0</Minimum>
-			<Maximum>250</Maximum> <!-- Not Sure -->
+			<Maximum>245</Maximum> <!-- Not Sure -->
 			<Style>
 				<ValuePos>End</ValuePos>
 			</Style>
@@ -170,28 +183,28 @@
 			<ColorZone>
 				<Color>yellow</Color>
 				<Begin>0</Begin>
-				<End>100</End>
+				<End>99</End>
 			</ColorZone>
 			<ColorZone>
 				<Color>green</Color>
 				<Begin>100</Begin>
-				<End>245</End>
+				<End>244</End>
 			</ColorZone>
 			<ColorLine>
 				<Color>red</Color>
-				<Position>246</Position>
+				<Position>245</Position>
 			</ColorLine>
 			<BeginText></BeginText>
 			<EndText></EndText>
 			<RedBlink>
 				<Greater>
-					<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
+					<Simvar name="GENERAL ENG OIL TEMPERATURE:1" unit="farenheit"/>
 					<Constant>245</Constant>
 				</Greater>
 			</RedBlink>
 		</Gauge>
 	
-		<Gauge>
+	<Gauge>
 			<Type>Horizontal</Type>
 			<ID>FuelPress_Gauge</ID>
 			<Title>FUEL</Title>
@@ -207,7 +220,7 @@
 			</Value>
 			<BeginText></BeginText>
 			<EndText></EndText>
-		</Gauge>
+	</Gauge>
 		
 		<Text>
 			<Left>CHT °F</Left>
@@ -217,15 +230,22 @@
 				</ToFixed>
 			</Right>
 		</Text>
-		
-		<Text>
-			<Left>EGT °F</Left>
-			<Right id="EGT">
-				<ToFixed precision="0">
-					<Simvar name="GENERAL ENG EXHAUST GAS TEMPERATURE:1" unit="farenheit"/>
-				</ToFixed>
-			</Right>
-		</Text>
+
+        <ColumnsGauge>
+            <Minimum>300</Minimum>
+		    <Maximum>1800</Maximum>
+            <Title>EGT °F</Title>
+			<Style>
+				<SizePercent>90</SizePercent>
+			</Style>
+            <Column><Simvar name="ENG EXHAUST GAS TEMPERATURE:1" unit="farenheit"/></Column>
+            <Column><Multiply><Simvar name="ENG EXHAUST GAS TEMPERATURE:1" unit="farenheit"/><Constant>0.93</Constant></Multiply></Column>
+            <Column><Multiply><Simvar name="ENG EXHAUST GAS TEMPERATURE:1" unit="farenheit"/><Constant>0.9</Constant></Multiply></Column>
+            <Column><Multiply><Simvar name="ENG EXHAUST GAS TEMPERATURE:1" unit="farenheit"/><Constant>0.98</Constant></Multiply></Column>
+            <Type>EGT</Type>
+
+        </ColumnsGauge>
+
 	</EngineDisplay>
 	
   <!--Annunciations -->
@@ -234,7 +254,7 @@
     
     <Annunciation>
       <Type>Warning</Type>
-      <Text>OIL PRESSURE</Text>
+      <Text>OIL PRESS</Text>
       <Condition>
 		<LowerEqual>
 			<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
