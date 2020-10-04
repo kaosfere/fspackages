@@ -3,6 +3,7 @@
   <Instrument>
     <Name>AS3X_Touch_1</Name>
     <SyntheticVision>True</SyntheticVision>
+	<AutoPitotHeat>True</AutoPitotHeat>
     <Electric>
 		<Simvar name="CIRCUIT GENERAL PANEL ON" unit="Bool"/>
     </Electric>
