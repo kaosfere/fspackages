@@ -3,7 +3,7 @@
   <Instrument>
     <Name>AS3X_Touch_1</Name>
     <SyntheticVision>True</SyntheticVision>
-	<AutoPitotHeat>True</AutoPitotHeat>
+		<AutoPitotHeat>True</AutoPitotHeat>
     <Electric>
 		<Simvar name="CIRCUIT GENERAL PANEL ON" unit="Bool"/>
     </Electric>
@@ -263,6 +263,17 @@
 		</LowerEqual>
       </Condition>
     </Annunciation>
+
+	<Annunciation>
+      <Type>Warning</Type>
+      <Text>OIL PRESS</Text>
+      <Condition>
+		<GreaterEqual>
+			<Simvar name="GENERAL ENG OIL PRESSURE:1" unit="psi"/>
+			<Constant>114</Constant>
+		</GreaterEqual>
+      </Condition>
+    </Annunciation>
     
     <Annunciation>
       <Type>Warning</Type>
@@ -351,6 +362,17 @@
           <Simvar name="GENERAL ENG OIL TEMPERATURE:1" unit="farenheit"/>
           <Constant>99</Constant>
         </LowerEqual>
+      </Condition>
+    </Annunciation>
+
+	<Annunciation>
+      <Type>Warning</Type>
+      <Text>OIL TEMP HI</Text>
+      <Condition>
+        <GreaterEqual>
+          <Simvar name="GENERAL ENG OIL TEMPERATURE:1" unit="farenheit"/>
+          <Constant>245</Constant>
+        </GreaterEqual>
       </Condition>
     </Annunciation>
 
